@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlayer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./app.js">
+    <link rel="stylesheet" href="./music.js">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- navBar -->
+     <div id="navbar">
+         <div class="user-main">
+             <img src="./img/user2.png" alt="">
+             <h3><a href="https://www.facebook.com/profile.php?id=100050512032458" class="">Cuong Tran</a></h3>
+            </div>
+         <div class="service">
+             <ul class="service-main">
+                 <li><i class="service-icon fa-solid fa-house"></i><a href="" class="">Home</a></li>
+                 <li><i class="service-icon fa-solid fa-sliders"></i><a href="" class="">Browse</a></li>
+                 <li><i class="service-icon fa-solid fa-file"></i><a href="" class="">Album</a></li>
+                 <li><i class="service-icon fa-solid fa-user"></i><a href="" class="">Artist</a></li>
+                 <li><i class="service-icon fa-solid fa-video"></i><a href="" class="">Video</a></li>
+             </ul>
+             <ul class="service-main">
+                 <h1>MY MUSIC</h1>
+                <li><i class="service-icon fa-solid fa-clock"></i><a href="" class="">Recently Played</a></li>
+                <li><i class="service-icon fa-solid fa-file-circle-check"></i><a href="" class="">Local Files</a></li>
+            </ul>
+            <ul class="service-main">
+                <h1>PLAYLIST</h1>
+                <li><a href="" class="">General Playlist</a></li>
+                <li><a href="" class="">Ease up beats</a></li>
+                <li><a href="" class="">Pop songs</a></li>
+                <li><a href="" class="">Mood swings</a></li>
+            </ul>
+         </div>
+     </div>
+
+     <div id="music">
+            <!-- Begin header-->
+         <div id="header">
+                 <div class="header-info">
+                     <div class="nav-open">
+                        <i class="fa-solid fa-bars"></i>
+                     </div>
+                     <div class="your-nation">
+                         <ul class="nation-box">
+                             <li>
+                                 <img src="./img/USA.svg.png" alt="">
+                                 <p>USA</p>
+                                 <i class="icon-up fa-solid fa-caret-up"></i>
+                                 <i class="icon-down fa-solid fa-caret-down"></i>
+                             </li>
+                             <div class="nation-vietnam">
+                                 <img src="./img/VietNam.png" alt="">
+                                 <p>Việt Nam</p>
+                             </div>
+                        </ul>
+                     </div>
+
+                    <div class="search-box">
+                      <i class="icon-search fa-solid fa-magnifying-glass"></i>
+                      <input type="text" name="" placeholder="Search">
+                    </div>
+
+                     <div class="user">
+                      <img src="./img/user2.png" alt="">
+                      <h3>Cuong Tran</h3>
+                      <p class="js-access about-me">
+                        <i class="fa-solid fa-chevron-down"></i>
+                            <ul class="js-access-nick access-nick">
+                                <li>Log In</li>
+                                <li>Log Out</li>
+                            </ul>
+                      </p>
+                     </div>
+                    </div>
+                    <div class="header-notify">
+                        <ul class="notify-page">
+                            <li>
+                                <p href="" class="notify-mess">
+                                    <i class="fa-regular fa-bell">
+                                        <span class="point-notify"></span>
+                                    </i></p>
+                            </li>
+                            <li><p href="" class="notify-setting"><i class="fa-solid fa-gear"></i></p></li>
+                        </ul>
+                    </div>
+         </div>
+            <!-- Begin slider -->
+         <div id="slider">
+            <div class="header-slider">
+                <h1>Top Artists</h1>
+                <p>-Top 50</p>
+            </div>
+
+            <div class="slider-list">
+                <div class="slider-item">
+                    <div class="slider-img">
+                        <img src="./img/slider-img1.jpeg" alt="" class="slider-img">
+                    </div>
+                    <h2 class="img-title">Stoney</h2>
+                    <h3 class="img-desc">Post Malone</h3>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-img">
+                        <img src="./img/slider-img2.jpeg" alt="" class="slider-img">
+                    </div>
+                    <h2 class="img-title">Blue Neighbour</h2>
+                    <h3 class="img-desc">Troye Sivan</h3>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-img">
+                        <img src="./img/slider-img3.jpeg" alt="" class="slider-img">
+                    </div>
+                    <h2 class="img-title">Roobbery</h2>
+                    <h3 class="img-desc">Juice</h3>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-img">
+                        <img src="./img/slider-img-4.jpeg" alt="" class="slider-img">
+                    </div>
+                    <h2 class="img-title">The Greatest</h2>
+                    <h3 class="img-desc">Kate Hudson</h3>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-img">
+                        <img src="./img/slider-img5.jpeg" alt="" class="slider-img">
+                    </div>
+                    <h2 class="img-title">Bank Account</h2>
+                    <h3 class="img-desc">21 Savage</h3>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-img">
+                        <img src="./img/slider-img6.jpeg" alt="" class="slider-img">
+                    </div>
+                    <h2 class="img-title">Stoney</h2>
+                    <h3 class="img-desc">Post Malone</h3>
+                </div>
+            </div>
+         </div>
+         
+         <div id="music-play">
+             <div class="music-contain">
+                <!-- music now -->
+                <div class="width-half width-full music-now">
+                    <div class="part-name">
+                        <h1>Now Playing</h1>
+                    </div>
+                    <div class="music-box">
+                        <div class="header-box">
+                            <p>Next</p>
+                            <span>-</span>
+                            <h3>Rockstar</h3>
+                        </div>
+                        <div class="cd">
+                            <div class="cd-thumb" style="background-image: url('./img/slider-img1.jpeg')"></div>
+                        </div>
+                        
+                        <div class="name-song">
+                          <h2>Roobbery</h2>
+                          <h4>Juice</h4>
+                        </div>
+    
+                        <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                        
+                        <audio id="audio" src=""></audio>
+                        <!-- track-time -->
+                        <div class="track-time">
+                            <div class="current-time"></div>
+                            <div class="length-time"></div>
+                        </div>
+                        <!-- control -->
+                        <div class="control">
+                            <div class="btn btn-random">
+                                <i class="fa-solid fa-shuffle"></i>
+                            </div>
+                            <div class="btn btn-prev">
+                                <i class="fa-solid fa-backward"></i>
+                            </div>
+                            <div class="bg-toggle-play">
+                                <div class="btn btn-toggle-play">
+                                    <i class="icon-pause fa-solid fa-pause"></i>
+                                    <i class="icon-play fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="btn btn-next">
+                                <i class="fa-solid fa-forward"></i>
+                            </div>
+                            <div class="btn btn-repeat">
+                                <i class="fa-solid fa-repeat"></i>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+             <!-- mostly -->
+                <div class="width-half width-full music-mostly">
+                  <div class="music-list">
+                     <div class="header-list">
+                         <h1>Mostly Played</h1>
+                     </div>
+                     <div class="playlist">
+                         <!-- <div class="song">
+                             <span class="number-item">01</span>
+                            <div class="thumb" style="background-image: url('./img/slider-img1.jpeg')"></div>
+                            <i class="current-music fa-solid fa-caret-right"></i>
+                            <div class="body-song">
+                               <h3 class="title-song">Music name</h3>
+                               <p class="author">Singer</p>
+                               <h3 class="length-song">4:31</h3>
+                            </div>
+                            <div class="option-song">
+                                <i class="fa-solid fa-ellipsis"></i> 
+                            </div>
+                         </div> -->
+                     </div>
+                  </div>
+                </div>
+
+         </div>
+         </div>
+    </div>
+    <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+
+  <script src="./app.js"></script>
+  <script src="./music.js"></script>
+</body>
+
+</html>

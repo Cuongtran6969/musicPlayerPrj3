@@ -1,0 +1,88 @@
+/* PC */
+@media(min-width: 1024px){
+    .width-half{
+        width: 50%;
+    }
+}
+@media(max-width:1023px){
+    #header{
+        padding: 10px;
+    }
+    .nav-open{
+        display: block;
+    }
+    #navbar{
+        display: none;
+    }
+    .header-info .user h3 {
+        padding: 0 7px;
+    }
+    .notify-page{
+        display: flex;
+        margin-right: 0;
+    }
+    .notify-page li {
+        padding: 0 10px
+    } 
+    .notify-page p{
+        font-size: 22px;
+    }  
+    
+}
+/* Tablet */
+@media(min-width: 740px) and (max-width: 1023px){
+    .song{
+        padding: 5px 0 5px 10px;
+    }
+    .song .thumb{
+        height: 40px;
+        width: 45px;
+        border-radius: 8px;
+    }
+    .song .current-music {
+        margin: 0 5px;
+    }
+    .body-song .title-song,
+    .body-song .length-song{
+        font-size: 15px;
+    }
+    .music-now{
+    margin-right: 30px;
+}
+.body-song .length-song {
+    margin-left: 10px;
+}
+.body-song .author {
+    font-size: 12px;
+}
+.song .option-song {
+    padding: 6px 10px;
+}
+
+
+}
+/* Mobile */
+@media(max-width: 739px){
+    .user-main{
+    display: block;
+    }
+    #header .search-box{
+        width: 48%;
+    }
+    #header .header-info{
+        width: 80%;
+    }
+    .music-contain{
+        display: block;
+    }
+    .width-full{
+        width: 100%;
+    }
+    .header-info .user {
+        display: none;
+    }
+    .notify-page li {
+        padding: 9px 15px;
+    }
+}
+
